@@ -8,3 +8,86 @@ Worktree: main
 Parent Agent: none
 Language: py
 Time Remaining: 2026-10-24T14:30:00Z
+
+## 2026-10-24T00:05:00Z Plan a beginner roadmap for the hackathon
+
+User Prompt (verbatim, secrets redacted):
+[Long message: asked for a beginner step-by-step plan for the Ghost Data Still Exists challenge, with the problem statements and repo zip attached. Full text omitted for length.]
+
+Agent Response Summary:
+Inspected the repo zip and datasets, then proposed a 12-hour phased plan: setup, data exploration, rule-based baseline, evidence search, limited AI use, evaluation, and submission. Noted that code/main.py is empty.
+
+Actions:
+* Listed and extracted the zip in a scratch workspace
+* Read README.md, AGENTS.md, deletion_rules.csv and CSV headers
+
+Context:
+tool=Claude.ai chat (web)
+model=Claude Sonnet 5.5
+branch=unknown
+repo_root=<<your path>>
+worktree=main
+parent_agent=none
+
+## 2026-10-24T00:15:00Z Setup walkthrough
+
+User Prompt (verbatim, secrets redacted):
+I want to start with the the setup first. I already have python and vs code installed. What do I do next. I want it step by step
+
+Agent Response Summary:
+Gave Windows setup steps: check Python, open the repo folder, create and activate a virtual environment, install pandas, install the VS Code Python extension, run git init.
+
+Actions:
+* No files edited; instructions only
+
+Context:
+tool=Claude.ai chat (web)
+model=Claude Sonnet 5.5
+branch=unknown
+repo_root=<<your path>>
+worktree=main
+parent_agent=none
+
+## 2026-10-24T00:25:00Z Choose a free AI tool
+
+User Prompt (verbatim, secrets redacted):
+1. Operating system is Windows
+2. 3.13.7
+3. Yes
+4. I don't have a choice. You can help me choose one. I don't want one where I have to pay as I have no money to pay for any AI coding tool. I will prefer one I don't need to install if it is not necessary
+
+Agent Response Summary:
+Searched for free AI coding options and recommended using the Claude.ai chat with a manually kept log.txt. Provided a SESSION START template.
+
+Actions:
+* Web search for free AI coding tools
+* Read the log format section of AGENTS.md
+
+Context:
+tool=Claude.ai chat (web)
+model=Claude Sonnet 5.5
+branch=unknown
+repo_root=<<your path>>
+worktree=main
+parent_agent=none
+
+## 2026-10-24T00:35:00Z Git hygiene and first data exploration
+
+User Prompt (verbatim, secrets redacted):
+1. It is created and saved
+2. I have ran git init earlier and even published it as public on github. So from now we should also consider git and publishing it on github
+3. I am ready
+
+Agent Response Summary:
+Advised checking the public repo for secrets and the venv, considering a private repo, and adding a .gitignore. Wrote and tested code/explore_data.py, which prints row counts and columns for each dataset CSV.
+
+Actions:
+* Created code/explore_data.py (tested on a scratch copy)
+
+Context:
+tool=Claude.ai chat (web)
+model=Claude Sonnet 5.5
+branch=main
+repo_root=<<your path>>
+worktree=main
+parent_agent=none
